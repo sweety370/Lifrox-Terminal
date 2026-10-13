@@ -41,6 +41,7 @@ android {
     }
 
     defaultConfig {
+        applicationId "com.alfrox.terminal"
         minSdkVersion project.properties.minSdkVersion.toInteger()
         targetSdkVersion project.properties.targetSdkVersion.toInteger()
         versionCode 118
@@ -51,7 +52,7 @@ android {
 
         buildConfigField "String", "TERMUX_PACKAGE_VARIANT", "\"" + project.ext.packageVariant + "\"" // Used by TermuxApplication class
 
-        manifestPlaceholders.TERMUX_PACKAGE_NAME = "com.termux"
+        manifestPlaceholders.TERMUX_PACKAGE_NAME = "com.alfrox.terminal"
         manifestPlaceholders.TERMUX_APP_NAME = "Lifrox Terminal"
         manifestPlaceholders.TERMUX_API_APP_NAME = "Termux:API"
         manifestPlaceholders.TERMUX_BOOT_APP_NAME = "Termux:Boot"
